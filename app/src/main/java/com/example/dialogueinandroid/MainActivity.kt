@@ -2,6 +2,7 @@ package com.example.dialogueinandroid
 
 import android.content.DialogInterface
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -57,5 +58,21 @@ class MainActivity : AppCompatActivity() {
             val dialog: AlertDialog = builderset3.create()
             dialog.show()
         }
+        binding.bt4.setOnClickListener {
+            val builderset4 = AlertDialog.Builder(this)
+                .setTitle("alert box 4")
+                .setPositiveButton("Positive"){dialog, which ->
+                    Toast.makeText(
+                        this,
+                        "you click on positive",
+                        Toast.LENGTH_SHORT
+                    ).show()}
+                .setNegativeButton("Negative"){dialog, which ->}
+                .setSingleChoiceItems(arrayOf("hacker","nontechy","teacher"),0){dialog, which ->}
+
+            val dialog: AlertDialog = builderset4.create()
+            dialog.show()
+        }
+
     }
 }
