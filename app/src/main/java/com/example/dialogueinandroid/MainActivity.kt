@@ -47,5 +47,15 @@ class MainActivity : AppCompatActivity() {
             dialog.show()
 
         }
+        binding.bt3.setOnClickListener{
+            val builderset3 = AlertDialog.Builder(this)
+                .setTitle("fruits item")
+                .setPositiveButton("Positive"){dialog, which -> finish()}
+                .setNegativeButton("Negative"){dialog, which ->}
+                .setNeutralButton("Neutral"){dialog, which ->}
+                .setItems(arrayOf("apple","banana","orange")){dialog, which -> }
+            val dialog: AlertDialog = builderset3.create()
+            dialog.show()
+        }
     }
 }
