@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+
+        app:srcCompat="@drawable/greentick" />
+
+    <TextView
+        android:id="@+id/tx1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Hello welcome for shown face" />
+    <TextView
+        android:id="@+id/tx2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="how is your android journey" />
+
+
+   <LinearLayout
+
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal" >
+
+
+       <Button
+           android:id="@+id/button2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:layout_margin="10dp"
+           android:backgroundTint="#1C7FE2"
+           android:text="Send Feedback" />
+
+       <Button
+           android:id="@+id/btnGood"
+           android:layout_width="match_parent"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:backgroundTint="#059142"
+           android:text="TOO GOOD" />
+   </LinearLayout>
+
+
+
+
+</LinearLayout>
+
